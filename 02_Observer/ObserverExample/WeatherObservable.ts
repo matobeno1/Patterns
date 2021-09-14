@@ -9,20 +9,23 @@ export class WeatherObservable implements IObservable {
     private _observers: IObserverMap = {};
 
     add(observer: IObserver): void {
-        throw new Error("Method not implemented.");
+        this._observers[observer.id] = observer;
     }
     remove(observer: IObserver): void {
-        throw new Error("Method not implemented.");
+        delete this._observers[observer.id]
     }
     notify(): void {
-        throw new Error("Method not implemented.");
+        Object.keys(this._observers).forEach((observerId: string) => {
+            this._observers[observerId].update();
+        })
     }
-    
+
     public get value(): number {
         return this._temperature;
     }
 
     public set value(value: number) {
         this._temperature = value;
+        this.notify();
     }
 }

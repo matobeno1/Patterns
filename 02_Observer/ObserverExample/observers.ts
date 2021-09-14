@@ -1,4 +1,4 @@
-import {IObservable, IObserver} from "./types";
+import { IObservable, IObserver } from "./types";
 
 const makeId = () => (
     Math.floor((1 + Math.random()) * 0x10000)
@@ -14,7 +14,7 @@ export class PhoneObserver implements IObserver {
         this._observable = observable;
     }
 
-    id(): string {
+    public get id(): string {
         return this._id;
     }
 
@@ -31,7 +31,7 @@ export class LCDObserver implements IObserver {
         this._observable = observable;
     }
 
-    id(): string {
+    public get id(): string {
         return this._id;
     }
 

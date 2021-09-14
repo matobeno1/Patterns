@@ -9,5 +9,5 @@ export interface IObservable {
 export interface IObserver {
     update(): void;
     /** Retrieves observer's unique ID. */
-    id(): string;
+    id: string;
 }

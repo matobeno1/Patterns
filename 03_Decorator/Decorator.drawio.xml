@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2021-09-14T15:09:55.803Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="jMpmgSblWyFqNKzZIf91" version="15.0.4" type="google">
+  <diagram id="CqdULb9oulVSWJwETf38" name="Page-1">
+    <mxGraphModel dx="825" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-1" value="Beverage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-4" value="+ description(): string&#xa;+ cost(): number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-1">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-5" value="Decaf" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-8" value="+ cost(): number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-5">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-9" value="Espresso" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="420" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-10" value="+ cost(): number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-9">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-11" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-5" target="cM-mOlSAM1-FCTw93fl1-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="560" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-12" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-9" target="cM-mOlSAM1-FCTw93fl1-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="414.22360248447194" y="430" as="sourcePoint" />
+            <mxPoint x="507.391304347826" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-13" value="AddonDecorator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="420" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-14" value="+ description(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-13">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-15" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-13" target="cM-mOlSAM1-FCTw93fl1-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="758.3260248447206" y="400" as="sourcePoint" />
+            <mxPoint x="690.0030434782608" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-17" value="" style="endArrow=open;endFill=1;endSize=12;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-13" target="cM-mOlSAM1-FCTw93fl1-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="340" as="sourcePoint" />
+            <mxPoint x="950" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="860" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-18" value="Has a reference" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="260" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-19" value="Acts like a Beverage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="350" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-26" value="CaramelDecorator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="550" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-27" value="+ description(): string&#xa;+ cost(): number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-26">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-28" value="SoyMilkDecorator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="550" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-29" value="+ description(): string&#xa;+ cost(): number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cM-mOlSAM1-FCTw93fl1-28">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-30" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-26" target="cM-mOlSAM1-FCTw93fl1-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="888.3260248447205" y="610" as="sourcePoint" />
+            <mxPoint x="820.0030434782607" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cM-mOlSAM1-FCTw93fl1-31" value="" style="endArrow=block;endSize=16;endFill=0;html=1;" edge="1" parent="1" source="cM-mOlSAM1-FCTw93fl1-28" target="cM-mOlSAM1-FCTw93fl1-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="765.251798561151" y="560" as="sourcePoint" />
+            <mxPoint x="843.8129496402878" y="482" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

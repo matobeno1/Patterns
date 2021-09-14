@@ -1,5 +1,5 @@
 import { IBeverage } from "./types";
-abstract class Beverage implements IBeverage {
+export abstract class Beverage implements IBeverage {
     protected _description: string = "";
     protected _cost: number = 0;
 

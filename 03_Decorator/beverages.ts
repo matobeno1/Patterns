@@ -1,8 +1,7 @@
 import { IBeverage } from "./types";
-
-export class Beverage implements IBeverage {
-    private _description: string = "";
-    private _cost: number = 0;
+abstract class Beverage implements IBeverage {
+    protected _description: string = "";
+    protected _cost: number = 0;
 
     public get description(): string {
         return this._description;
@@ -12,4 +11,13 @@ export class Beverage implements IBeverage {
         return this._cost;
     }
 
+    public logDescription(): void {
+        console.log(`The ${this.description} costs ${this._cost}€`)
+    }
+
+}
+
+export class Espresso extends Beverage {
+    protected _description: string = "Espresso";
+    protected _cost: number = 1.2;
 }
